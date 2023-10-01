@@ -1,0 +1,347 @@
+* {
+  /* border-top: 5px solid #1098ad; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: 10px solid #1098ad;
+  margin: 0;
+  position: relative;
+}
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  color: #1098ad;
+}
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  /* margin-bottom: 60px; */
+  /* height: 80px; */
+  /* padding: 20px; */
+}
+.post-header {
+  margin-bottom: 40px;
+}
+aside {
+  background-color: #f7f7f7;
+  /* border: 5px solid #1098ad;  */
+  border-top: 5px solid#1098ad;
+  border-bottom: 5px solid #1098ad;
+  /* box-sizing: border-box; */
+  padding: 50px 40px;
+  display: block;
+  /* width: 300px; */
+  /* margin-bottom: 0; */
+  /* margin-right: 300px; */
+}
+.article {
+  /* margin-bottom: 60px; */
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+h1 {
+  color: black;
+  font-size: 26px;
+  /* font-family: sans-serif; */
+  text-transform: uppercase;
+  font-style: italic;
+}
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  /* font-family: sans-serif; */
+}
+h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  /* color: red; */
+  /* font-family: sans-serif; */
+}
+h4 {
+  font-size: 20px;
+  /* font-family: sans-serif; */
+  text-transform: uppercase;
+}
+p {
+  font-size: 22px;
+  /* font-family: sans-serif; */
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+/* ol, */
+/* ul {
+  margin-left: 50px;
+} */
+h4 {
+  margin-bottom: 20px;
+}
+ul {
+  /* width: 201.5px; */
+  align-items: center;
+}
+li {
+  /* font-family: sans-serif; */
+  font-size: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+footer p {
+  font-size: 16px;
+  width: 300px;
+  margin-bottom: 0;
+  display: inline-block;
+  width: 300px;
+  margin-bottom: 40px;
+}
+/* article header p {
+  font-style: italic;
+} */
+.author {
+  font-style: italic;
+}
+#Copyright {
+  font-size: 16px;
+}
+#author {
+  font-size: 18px;
+  height: 20px;
+  font-style: italic;
+}
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+.related-post {
+  list-style: none;
+  text-decoration: none;
+  margin-left: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* padding: 50px; */
+  /* background-color: red; */
+}
+
+/* body {
+  background-color:  orangered; 
+} */
+/* .first-li {
+  font-weight: bold;
+} */
+/* li:first-child {
+  font-weight: bold;
+} */
+/* li:last-child {
+  font-style: italic;
+}
+li:nth-child(odd) {
+  color: red;
+}  */
+/* if there is only first element of article is paragraph then only it will work */
+/* article p:first-child {
+  color: red;
+} */
+/* article p:last-child {
+  color: red;
+} */
+
+/* styling links */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+/* a:visited {
+  color: #1098ad;
+} */
+a:active {
+  background-color: black;
+  font-style: italic; /*during the clicking time when you holding the button*/
+}
+nav a:link {
+  margin-right: 20px;
+  /* margin-top: 20px; */
+  /* background-color: red; */
+  /* display: block; */
+  display: inline-block;
+}
+/* body {
+  color: pink;
+  font-style: italic;
+  background-color: green;// inheritance not all the property are inherid from parent element like border
+}
+header {
+  background-color: blue;
+} */
+nav {
+  font-size: 18px;
+  padding-top: 10px;
+}
+.rel {
+  text-align: center;
+}
+.post-image {
+  width: 100%;
+  height: auto;
+}
+button {
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+h2 {
+  /* background-color: orange; */
+  position: relative;
+}
+/* h3 + p {
+  color: red;  jeson siblling line very after to h3 h3 ka pahla paragraph
+} */
+h2::after {
+  content: "TOP";
+  background-color: yellow;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+/* float
+h1 {
+  float: left;
+   background-color: red; 
+}
+nav {
+  float: right;
+  background-color: green; 
+}
+/* .clear {
+  clear: both;
+} 
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+.author {
+  margin-left: 80px;
+  margin-top: 10px;
+}
+.clear-fix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+article {
+  /* background-color: green; 
+  width: 825px;
+  float: left;
+}
+aside {
+  /* background-color: red; 
+  width: 300px;
+  float: right;
+}
+footer {
+  /* background-color: yellow; 
+  clear: both;
+}
+.Copyright::after {
+  clear: both;
+  content: "";
+  display: block;
+} */
+
+/* flex-box */
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+  /* align-items: center; */
+}
+.related-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+.related-link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+/* flexbox layout */
+/* .row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+article {
+  flex: 0 0 825;
+  margin-bottom: 0;
+}
+aside {
+  width: 300px;
+  flex: 1; 
+}*/
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+.main-header {
+  grid-column: 1 / -1;
+}
+
+article {
+  /* grid-column: 1/ 2; */
+}
+aside {
+  /* grid-column: 2/-1; */
+}
+footer {
+  /* background-color: red; */
+  grid-column: 1/-1;
+}
